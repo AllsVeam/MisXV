@@ -3728,6 +3728,44 @@
     <style>
     </style>
     <!-- Fonts Plugin CSS -->
+     
+    <style>
+        /* Estilo para la tarjeta que cubre toda la pantalla */
+        .full-screen-card {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 1s ease; /* Para desvanecerse */
+        }
+
+        /* Estilo para el contenido de la carta */
+        .card-content {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Animación de hover (cuando pasa el ratón por encima de la carta) */
+        .card-content:hover {
+            transform: scale(1.05); /* Le da un efecto de "agrandamiento" al hacer hover */
+        }        
+
+        /* El contenido real de la página (oculto al principio) */
+        #page {
+            display: none;
+        }
+    </style>
 </head>
 
 <body data-rsssl=1 itemtype='https://schema.org/WebPage' itemscope='itemscope'
@@ -3736,7 +3774,15 @@
     <a class="skip-link screen-reader-text" href="#content" title="Ir al contenido">
         Ir al contenido</a>
 
-    <div class="hfeed site" id="page">
+    <div class="full-screen-card" id="fullScreenCard">
+        <!-- Carta en el centro con el texto -->
+        <div class="card-content" id="cardContent">
+            <h2>Abrir Invitación</h2>
+            <p>Haz clic para abrir la invitación</p>
+        </div>
+    </div>
+
+    <div class="hfeed site main-content" id="page">
         <div id="content" class="site-content">
             <div class="ast-container">
 
@@ -3838,7 +3884,7 @@
                                         class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
                                     <div class="wp-block-cover__image-background wp-image-11166 has-parallax lazyload"
                                         style="background-position:50% 50%;background-image:inherit"
-                                        data-bg-image="url('img/fondo.jpg')">
+                                        data-bg-image="url('img/fondo2.jpg')">
                                     </div>
                                     <div
                                         class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
@@ -3950,7 +3996,7 @@
                                         style="background-color:#22ff0084"></span>
                                     <div class="wp-block-cover__image-background wp-image-11166 has-parallax lazyload"
                                         style="background-position:50% 50%;background-image:inherit"
-                                        data-bg-image="url('/img/fondo.jpg')">
+                                        data-bg-image="url('img/fondo2.jpg')">
                                     </div>
                                     <div
                                         class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
@@ -4435,7 +4481,7 @@
                                         class="wp-block-cover__background has-pale-pink-background-color has-background-dim-10 has-background-dim"></span>
                                     <div class="wp-block-cover__image-background wp-image-11166 has-parallax lazyload"
                                         style="background-position:50% 50%;background-image:inherit"
-                                        data-bg-image="url('/img/fondo.jpg')">
+                                        data-bg-image="url('img/fondo2.jpg')">
                                     </div>
                                     <div
                                         class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
@@ -5337,7 +5383,9 @@
 
             </div> <!-- ast-container -->
         </div><!-- #content -->
-    </div><!-- #page -->
+    </div>    
+    <!-- #page -->
+
     <!-- Meta Pixel Event Code -->
     <script type='text/javascript'>
         document.addEventListener('wpcf7mailsent', function (event) {
@@ -5430,33 +5478,15 @@
     <script id="uagb-timeline-js-js-extra">
         var uagb_timeline_data = { "tablet_breakpoint": "976", "mobile_breakpoint": "767" };
     </script>
+    
     <script
         src="https://miinvitacion.com.mx/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/timeline.min.js?ver=2.18.2"
         id="uagb-timeline-js-js"></script>
-    <script src="https://miinvitacion.com.mx/wp-content/uploads/uag-plugin/assets/11000/uag-js-11114.js?ver=1738008110"
-        id="uag-script-11114-js"></script>
+    <!-- <script src="https://miinvitacion.com.mx/wp-content/uploads/uag-plugin/assets/11000/uag-js-11114.js?ver=1738008110"
+        id="uag-script-11114-js"></script> -->
     <script
         src="https://miinvitacion.com.mx/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.16.6"
         id="smush-lazy-load-js"></script>
-    <script>
-        /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }, !1);
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const audio = document.getElementById("miAudio");
-
-            audio.addEventListener("loadedmetadata", function () {
-                if (audio.duration > 60) {
-                    audio.currentTime = 60; // Salta al minuto 1 (segundo 60)
-                }
-                audio.play().catch(error => {
-                console.log("El navegador bloqueó la reproducción automática. Requiere interacción del usuario.");
-            });
-            });
-        });
-    </script>    
-
     <script>
         // Fecha objetivo (24 de febrero de 2025 a las 00:00:00)
         const targetDate = new Date("February 24, 2025 00:00:00").getTime();
@@ -5483,7 +5513,54 @@
 
         setInterval(updateCountdown, 1000);
         updateCountdown();
+        
+        window.addEventListener('load', function () {
+            const audio = document.getElementById("miAudio");
+            audio.currentTime = 60; // Salta al minuto 1 (segundo 60)
+            console.log("Se esta forzando");
+
+            audio.addEventListener("loadedmetadata", function () {
+                console.log("Entramose?");
+                audio.mute();
+                audio.play().catch(error => {
+                    console.log("El navegador bloqueó la reproducción automática. Requiere interacción del usuario.");
+                });
+            });
+        });
+
+        /*
+                if (audio.duration > 60) {
+                    audio.currentTime = 60; // Salta al minuto 1 (segundo 60)
+                }*/
+
+        /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }, !1);
     </script>
+
+<script>
+    // Obtener los elementos
+    const fullScreenCard = document.getElementById("fullScreenCard");
+    const cardContent = document.getElementById("cardContent");
+    const mainContent = document.getElementById("page");    
+    const audio = document.getElementById("miAudio");
+
+    // Agregar el evento de clic sobre la carta
+    cardContent.addEventListener("click", function() {
+        // Ocultar la carta (desvanecimiento)
+        fullScreenCard.style.opacity = 0;
+        setTimeout(function() {
+            fullScreenCard.style.display = "none"; // Esto oculta completamente la carta después de la animación
+        }, 1000); // Tiempo del desvanecimiento (debe coincidir con la duración de la animación)
+
+        // Mostrar el contenido principal
+        mainContent.style.display = "block";
+
+        // Reproducir el audio
+        audio.play().catch(error => {
+            console.log("El navegador bloqueó la reproducción automática. Requiere interacción del usuario.");
+        });
+    });
+</script>
+    
 </body>
 
 </html>
