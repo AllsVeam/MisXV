@@ -14,7 +14,7 @@
     <meta property="og:site_name" content="Mi Invitación" />
     <meta property="article:modified_time" content="2025-01-01T22:02:35+00:00" />
     <meta property="og:image"
-        content="https://raw.githubusercontent.com/AllsVeam/MisXV/refs/heads/main/img/banner.jpeg" />
+        content="https://raw.githubusercontent.com/AllsVeam/MisXV/refs/heads/main/img/galery.jpeg" />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="800" />
     <meta property="og:image:type" content="image/png" />
@@ -103,9 +103,9 @@
                                 <div class="wp-block-cover alignfull has-parallax"
                                     style="min-height:815px;aspect-ratio:unset;"><span aria-hidden="true"
                                         class="wp-block-cover__background has-black-background-color has-background-dim-10 has-background-dim"></span>
-                                    <div class="wp-block-cover__image-background wp-image-11126 has-parallax lazyload"
-                                        style="background-position:50% 50%;background-image: url('img/banner.jpeg');"
-                                        >
+                                    <div class="wp-block-cover__image-background wp-image-11126 has-parallax lazyload banner-img"
+                                        
+                                    >
                                     </div>
                                     <div
                                         class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
@@ -293,11 +293,10 @@
 
 
 
-                                <div class="wp-block-cover alignfull has-parallax has-medium-font-size wp-duotone-unset-3"
-                                    style="min-height:650px;aspect-ratio:unset;"><span aria-hidden="true"
-                                        class="wp-block-cover__background has-background-dim-10 has-background-dim"></span>
-                                    <div class="wp-block-cover__image-background wp-image-25689 has-parallax lazyload"
-                                        style="background-position:50% 50%;background-image:inherit"
+                                <div class="wp-block-cover alignfull has-parallax has-medium-font-size wp-duotone-unset-3 body-img-container">
+                                    <span aria-hidden="true" class="wp-block-cover__background has-background-dim-10 has-background-dim">
+                                    </span>
+                                    <div class="wp-block-cover__image-background wp-image-25689 has-parallax lazyload body-img" 
                                         data-bg-image="url('img/galery.jpeg')">
                                     </div>
                                     <div
@@ -794,7 +793,7 @@
                                     </div>
                                 </div> -->
 
-                                <!--
+                                
                                 <div class="wp-block-cover alignfull is-light has-parallax"
                                     style="min-height:580px;aspect-ratio:unset;"><span aria-hidden="true"
                                         class="wp-block-cover__background has-pale-pink-background-color has-background-dim-10 has-background-dim"></span>
@@ -819,12 +818,29 @@
                                                         data-responsive="auto"
                                                         class="n2-ss-slider n2-ow n2-has-hover n2notransition  ">
 
-
-
+                                                        <!-- 
+                                                            
+                                                        <figure class="wp-block-image aligncenter size-full is-resized ">
+                                                            <img loading="lazy" decoding="async" width="1080" height="704"                                                                
+                                                                id="mainImage"
+                                                                alt="" class="wp-image-11143 lazyload"
+                                                                style="--smush-placeholder-width: 1080px; --smush-placeholder-aspect-ratio: 1080/704;width:294px;height:auto"
+                                                                src="galery/1.jpeg" 
+                                                            />                                                                                                                    
+                                                        </figure>
+                                                        
+                                                        -->
+                                                        <div class="center">
+                                                            <figure class="image-container">
+                                                                <img id="mainImage" src="galery/1.jpeg" alt="Imagen principal">
+                                                            </figure>
+                                                        </div>
 
 
                                                         <div class="n2-ss-slider-wrapper-outside"
                                                             style="grid-template-rows:1fr auto">
+                                                            
+                                                            <!-- 
                                                             <div class="n2-ss-slider-wrapper-inside">
                                                                 <div class="n2-ss-slider-1 n2_ss__touch_element n2-ow">
                                                                     <div class="n2-ss-slider-2 n2-ow">
@@ -848,7 +864,7 @@
                                                                                             class="skip-lazy"
                                                                                             data-skip-lazy="1"><img
                                                                                                 decoding="async"
-                                                                                                src="//miinvitacion.com.mx/wp-content/uploads/slider/cache/7b56527634adeeac97de11b1a8dd2f56/WhatsApp-Image-2024-02-20-at-9.41.36-AM-1.jpg"
+                                                                                                src="galery/1.jpeg"
                                                                                                 alt="" title=""
                                                                                                 loading="lazy"
                                                                                                 class="skip-lazy"
@@ -1395,6 +1411,11 @@
                                                                             alt="next arrow"></div>
                                                                 </div>
                                                             </div>
+                                                            -->
+
+                                                            <div style="margin-bottom: 2rem;"></div>
+                                                            
+                                                            <!-- Seleccionar imagenes -->
                                                             <div
                                                                 class="n2-ss-slider-controls n2-ss-slider-controls-below">
                                                                 <div data-width-percent="100"
@@ -1408,12 +1429,14 @@
                                                                             <div class="n2-thumbnail-dot n2-style-67eb3c604afd812b9014e8165a592b43-dot "
                                                                                 data-slide-public-id="1" role="button"
                                                                                 aria-label="WhatsApp Image 2024-02-20 at 9.41.36 AM (1)"
-                                                                                tabindex="0">
+                                                                                tabindex="0"
+                                                                                onclick="changeImage('galery/1.jpeg')"
+                                                                                >
                                                                                 <picture class="skip-lazy"
                                                                                     data-skip-lazy="1"><img
                                                                                         decoding="async"
                                                                                         alt="WhatsApp Image 2024-02-20 at 9.41.36 AM (1)"
-                                                                                        src="https://miinvitacion.com.mx/wp-content/uploads/slider/cache/06a98d419d65a4c76900200bb26c87d9/WhatsApp-Image-2024-02-20-at-9.41.36-AM-1.jpg"
+                                                                                        src="galery/1.jpeg"
                                                                                         width="120" height="80"
                                                                                         loading="lazy" class="skip-lazy"
                                                                                         data-skip-lazy="1" /></picture>
@@ -1421,12 +1444,14 @@
                                                                             <div class="n2-thumbnail-dot n2-style-67eb3c604afd812b9014e8165a592b43-dot "
                                                                                 data-slide-public-id="2" role="button"
                                                                                 aria-label="WhatsApp Image 2024-02-20 at 9.41.36 AM"
-                                                                                tabindex="0">
+                                                                                tabindex="0"
+                                                                                onclick="changeImage('galery/2.jpeg')"
+                                                                                >
                                                                                 <picture class="skip-lazy"
                                                                                     data-skip-lazy="1"><img
                                                                                         decoding="async"
                                                                                         alt="WhatsApp Image 2024-02-20 at 9.41.36 AM"
-                                                                                        src="https://miinvitacion.com.mx/wp-content/uploads/slider/cache/d9a61e4426f73ae6edb4f98b06058c9c/WhatsApp-Image-2024-02-20-at-9.41.36-AM.jpg"
+                                                                                        src="galery/2.jpeg"
                                                                                         width="120" height="180"
                                                                                         loading="lazy" class="skip-lazy"
                                                                                         data-skip-lazy="1" /></picture>
@@ -1434,12 +1459,14 @@
                                                                             <div class="n2-thumbnail-dot n2-style-67eb3c604afd812b9014e8165a592b43-dot "
                                                                                 data-slide-public-id="3" role="button"
                                                                                 aria-label="WhatsApp Image 2024-02-20 at 9.41.37 AM (1)"
-                                                                                tabindex="0">
+                                                                                tabindex="0"
+                                                                                onclick="changeImage('galery/3.jpeg')"
+                                                                                >
                                                                                 <picture class="skip-lazy"
                                                                                     data-skip-lazy="1"><img
                                                                                         decoding="async"
                                                                                         alt="WhatsApp Image 2024-02-20 at 9.41.37 AM (1)"
-                                                                                        src="https://miinvitacion.com.mx/wp-content/uploads/slider/cache/80af2f602787f6d1cdd4584202afc389/WhatsApp-Image-2024-02-20-at-9.41.37-AM-1.jpg"
+                                                                                        src="galery/3.jpeg"
                                                                                         width="120" height="80"
                                                                                         loading="lazy" class="skip-lazy"
                                                                                         data-skip-lazy="1" /></picture>
@@ -1447,12 +1474,14 @@
                                                                             <div class="n2-thumbnail-dot n2-style-67eb3c604afd812b9014e8165a592b43-dot "
                                                                                 data-slide-public-id="4" role="button"
                                                                                 aria-label="WhatsApp Image 2024-02-20 at 9.41.37 AM"
-                                                                                tabindex="0">
+                                                                                tabindex="0"
+                                                                                onclick="changeImage('galery/4.jpeg')"
+                                                                                >
                                                                                 <picture class="skip-lazy"
                                                                                     data-skip-lazy="1"><img
                                                                                         decoding="async"
                                                                                         alt="WhatsApp Image 2024-02-20 at 9.41.37 AM"
-                                                                                        src="https://miinvitacion.com.mx/wp-content/uploads/slider/cache/95e9356fd60d6c25477e82e25e3cf5bf/WhatsApp-Image-2024-02-20-at-9.41.37-AM.jpg"
+                                                                                        src="galery/4.jpeg"
                                                                                         width="120" height="80"
                                                                                         loading="lazy" class="skip-lazy"
                                                                                         data-skip-lazy="1" /></picture>
@@ -1460,16 +1489,34 @@
                                                                             <div class="n2-thumbnail-dot n2-style-67eb3c604afd812b9014e8165a592b43-dot "
                                                                                 data-slide-public-id="5" role="button"
                                                                                 aria-label="WhatsApp Image 2024-02-20 at 9.41.38 AM"
-                                                                                tabindex="0">
+                                                                                tabindex="0"
+                                                                                onclick="changeImage('galery/5.jpeg')"
+                                                                                >
                                                                                 <picture class="skip-lazy"
                                                                                     data-skip-lazy="1"><img
                                                                                         decoding="async"
                                                                                         alt="WhatsApp Image 2024-02-20 at 9.41.38 AM"
-                                                                                        src="https://miinvitacion.com.mx/wp-content/uploads/slider/cache/e105c7e0ad45b0c2968385c01987f8ba/WhatsApp-Image-2024-02-20-at-9.41.38-AM.jpg"
+                                                                                        src="galery/5.jpeg"
                                                                                         width="120" height="80"
                                                                                         loading="lazy" class="skip-lazy"
                                                                                         data-skip-lazy="1" /></picture>
                                                                             </div>
+                                                                            <div class="n2-thumbnail-dot n2-style-67eb3c604afd812b9014e8165a592b43-dot "
+                                                                                data-slide-public-id="6" role="button"
+                                                                                aria-label="WhatsApp Image 2024-02-20 at 9.41.38 AM"
+                                                                                tabindex="0"
+                                                                                onclick="changeImage('galery/6.jpeg')"
+                                                                                >
+                                                                                <picture class="skip-lazy"
+                                                                                    data-skip-lazy="1"><img
+                                                                                        decoding="async"
+                                                                                        alt="WhatsApp Image 2024-02-20 at 9.41.38 AM"
+                                                                                        src="galery/6.jpeg"
+                                                                                        width="120" height="80"
+                                                                                        loading="lazy" class="skip-lazy"
+                                                                                        data-skip-lazy="1" /></picture>
+                                                                            </div>
+                                                                            <!--  
                                                                             <div class="n2-thumbnail-dot n2-style-67eb3c604afd812b9014e8165a592b43-dot "
                                                                                 data-slide-public-id="6" role="button"
                                                                                 aria-label="WhatsApp Image 2024-02-20 at 9.41.39 AM (2)"
@@ -1522,6 +1569,7 @@
                                                                                         loading="lazy" class="skip-lazy"
                                                                                         data-skip-lazy="1" /></picture>
                                                                             </div>
+                                                                            -->
                                                                         </div>
                                                                     </div>
                                                                     <div
@@ -1544,6 +1592,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+
                                                         </div>
                                                     </div><ss3-loader></ss3-loader>
                                                 </div>
@@ -1552,7 +1601,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                -->
+                                
 
 
 
@@ -1584,7 +1633,7 @@
                                                     <div class="uagb-button__wrapper"><a
                                                             class="uagb-buttons-repeater wp-block-button__link"
                                                             aria-label="" style="background-color: #535c39;"
-                                                            href="https://api.whatsapp.com/send?phone=+525613589761&amp;text=Confirmo%20mi%20asistencia.%20Mi%20nombre%20es:"
+                                                            href="https://api.whatsapp.com/send?phone=+525535275542&amp;text=Confirmo%20mi%20asistencia.%20Mi%20nombre%20es:"
                                                             rel="follow noopener" target="_blank" role="button"><span
                                                                 class="uagb-button__icon uagb-button__icon-position-before"><svg
                                                                     xmlns="https://www.w3.org/2000/svg"
@@ -1815,6 +1864,17 @@
         });
 
         /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }, !1);
+
+        function changeImage(newSrc) {
+            let mainImage = document.getElementById("mainImage");
+            
+            mainImage.style.opacity = "0";
+            
+            setTimeout(() => {
+                mainImage.src = newSrc;
+                mainImage.style.opacity = "1";
+            }, 500);
+        }
     </script>
 </body>
 
